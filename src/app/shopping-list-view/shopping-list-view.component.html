@@ -1,0 +1,62 @@
+<ng-template [ngIf]="handsetLayout$ | async" [ngIfElse]="desktopLayout">
+    <mat-tab-group class="layout handset" mat-align-tabs="center">
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <div class="label-with-chip">
+                    <div class="label">Current list</div>
+                    <app-progress-chip
+                        *ngIf="currentListItemCount$ | async as count"
+                        [current]="count.found"
+                        [total]="count.total"
+                    ></app-progress-chip>
+                </div>
+            </ng-template>
+            <div class="tab-content-wrapper">
+                <app-current-list></app-current-list>
+                <app-new-item></app-new-item>
+            </div>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                Old list
+            </ng-template>
+            <div class="tab-content-wrapper">
+                <app-old-list></app-old-list>
+            </div>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                Recipe
+            </ng-template>
+            <div class="tab-content-wrapper">
+                <app-recipe-list></app-recipe-list>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</ng-template>
+<ng-template #desktopLayout>
+    <div class="layout desktop">
+        <div class="list-wrapper">
+            <h2>
+                <div class="label-with-chip">
+                    <div class="label">Current list</div>
+                    <app-progress-chip
+                        *ngIf="currentListItemCount$ | async as count"
+                        [current]="count.found"
+                        [total]="count.total"
+                    ></app-progress-chip>
+                </div>
+            </h2>
+            <app-current-list></app-current-list>
+            <app-new-item></app-new-item>
+        </div>
+        <div class="list-wrapper">
+            <h2>Old list</h2>
+            <app-old-list></app-old-list>
+        </div>
+        <div class="list-wrapper">
+            <h2>Recipe</h2>
+            <app-recipe-list></app-recipe-list>
+        </div>
+    </div>
+</ng-template>

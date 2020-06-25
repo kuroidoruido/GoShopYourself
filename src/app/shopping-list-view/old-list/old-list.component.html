@@ -1,0 +1,9 @@
+<mat-list role="list">
+    <mat-list-item *ngFor="let item of oldItems$ | async; tackBy: trackItems" role="listitem">
+        <div class="item-wrapper">
+            <app-add-to-current-list-button (iconClick)="addToCurrentList(item)"></app-add-to-current-list-button>
+            <span class="item needed-item">{{ item.label }}</span>
+            <app-remove-item-button class="remove-button" (iconClick)="removeItem(item)"></app-remove-item-button>
+        </div>
+    </mat-list-item>
+</mat-list>

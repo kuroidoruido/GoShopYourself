@@ -1,0 +1,10 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="add-form-field-wrapper">
+        <mat-form-field class="input-wrapper">
+            <mat-label>Add item:</mat-label>
+            <input matInput placeholder="Pizza base" formControlName="label" autocomplete="off" />
+            <mat-error *ngIf="form.controls.label.errors?.saved">{{ form.controls.label.errors?.saved }}</mat-error>
+        </mat-form-field>
+        <button type="submit" mat-button>Add</button>
+    </div>
+</form>
