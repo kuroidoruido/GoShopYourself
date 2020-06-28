@@ -1,0 +1,80 @@
+{
+  "configVersion": 1,
+  "timestamp": 1593363912564,
+  "index": "/GoShopYourself/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/GoShopYourself/favicon.ico",
+        "/GoShopYourself/index.html",
+        "/GoShopYourself/main-es2015.4c7306c70abaccdbca2b.js",
+        "/GoShopYourself/main-es5.4c7306c70abaccdbca2b.js",
+        "/GoShopYourself/manifest.webmanifest",
+        "/GoShopYourself/polyfills-es2015.f332a089ad1600448873.js",
+        "/GoShopYourself/polyfills-es5.177e85a9724683782539.js",
+        "/GoShopYourself/runtime-es2015.0dae8cbc97194c7caed4.js",
+        "/GoShopYourself/runtime-es5.0dae8cbc97194c7caed4.js",
+        "/GoShopYourself/styles.265343c9b2da918a76ee.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/GoShopYourself/assets/icons/icon-128x128.png",
+        "/GoShopYourself/assets/icons/icon-144x144.png",
+        "/GoShopYourself/assets/icons/icon-152x152.png",
+        "/GoShopYourself/assets/icons/icon-192x192.png",
+        "/GoShopYourself/assets/icons/icon-384x384.png",
+        "/GoShopYourself/assets/icons/icon-512x512.png",
+        "/GoShopYourself/assets/icons/icon-72x72.png",
+        "/GoShopYourself/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/GoShopYourself/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/GoShopYourself/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/GoShopYourself/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/GoShopYourself/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/GoShopYourself/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/GoShopYourself/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/GoShopYourself/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/GoShopYourself/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/GoShopYourself/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/GoShopYourself/index.html": "d9205abc3ee7d0d19027a537d702667415b3a4c7",
+    "/GoShopYourself/main-es2015.4c7306c70abaccdbca2b.js": "6b94d2a3efcd9ede51ad10aa53ac673ae1a9c235",
+    "/GoShopYourself/main-es5.4c7306c70abaccdbca2b.js": "b91f53c329eaa500137ae3c2f9edcf6c99668c96",
+    "/GoShopYourself/manifest.webmanifest": "08dcea08fcb10366edf4ed00172ef620d13edd35",
+    "/GoShopYourself/polyfills-es2015.f332a089ad1600448873.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "/GoShopYourself/polyfills-es5.177e85a9724683782539.js": "8aa26ea87b9958c6bd13b7c257c0e9940438e684",
+    "/GoShopYourself/runtime-es2015.0dae8cbc97194c7caed4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/GoShopYourself/runtime-es5.0dae8cbc97194c7caed4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/GoShopYourself/styles.265343c9b2da918a76ee.css": "26875b01d61ca902dfdb9d8dcc0feaf674f0e685"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
