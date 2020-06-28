@@ -64,7 +64,7 @@ export class ShoppingListState {
     itemFound(ctx: StateContext<ShoppingItem[]>, action: ShoppingItemFound) {
         ctx.setState(
             produce(ctx.getState(), (state) => {
-                const item = state.find((item) => item.label === action.label);
+                const item = state.find((shoppingItem) => shoppingItem.label === action.label);
                 if (item) {
                     item.status = 'FOUND';
                 }
@@ -76,7 +76,7 @@ export class ShoppingListState {
     itemBackToNeeded(ctx: StateContext<ShoppingItem[]>, action: ShoppingItemBackToNeeded) {
         ctx.setState(
             produce(ctx.getState(), (state) => {
-                const item = state.find((item) => item.label === action.label);
+                const item = state.find((shoppingItem) => shoppingItem.label === action.label);
                 if (item) {
                     item.status = 'NEEDED';
                 }
@@ -88,7 +88,7 @@ export class ShoppingListState {
     addItem(ctx: StateContext<ShoppingItem[]>, action: AddShoppingItem) {
         ctx.setState(
             produce(ctx.getState(), (state) => {
-                const item = state.find((item) => item.label === action.label);
+                const item = state.find((shoppingItem) => shoppingItem.label === action.label);
                 if (item) {
                     throw new Error(`"${action.label}" item already exist`);
                 } else {
