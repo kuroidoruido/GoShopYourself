@@ -2,6 +2,8 @@
 
 Simple shopping list built as a PWA.
 
+![Deploy to GitHub Pages](https://github.com/kuroidoruido/GoShopYourself/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
+
 ## Features
 
 -   create a shopping list
@@ -9,9 +11,9 @@ Simple shopping list built as a PWA.
 
 ## The future
 
--   Install PWA message on mobile
+-   Integration with OneStore
 -   Recipe list (items sets to add multiple items at once)
 -   Favorites items
--   Intégration with OneStore
 -   Add a specific icon
 -   Add i18n support
+-   Dark theme
