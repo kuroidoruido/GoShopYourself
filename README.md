@@ -13,3 +13,5 @@ Simple shopping list built as a PWA.
 -   Recipe list (items sets to add multiple items at once)
 -   Favorites items
 -   Intégration with OneStore
+-   Add a specific icon
+-   Add i18n support
