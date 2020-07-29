@@ -3,6 +3,7 @@ import { NgxsModule } from '@ngxs/store';
 
 import { ShoppingListState } from 'src/app/store/shopping-list.state';
 import { HeaderComponent } from './header.component';
+import { provideOneStoreManagerService } from '../one-store-manager.service.mock.spec';
 
 describe('HeaderComponent', () => {
     let component: HeaderComponent;
@@ -12,6 +13,7 @@ describe('HeaderComponent', () => {
         TestBed.configureTestingModule({
             declarations: [HeaderComponent],
             imports: [NgxsModule.forRoot([ShoppingListState])],
+            providers: [provideOneStoreManagerService()],
         }).compileComponents();
     }));
 

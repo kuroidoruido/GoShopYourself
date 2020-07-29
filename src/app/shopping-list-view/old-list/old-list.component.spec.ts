@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NgxsModule } from '@ngxs/store';
 
+import { provideOneStoreManagerService } from 'src/app/one-store-manager.service.mock.spec';
 import { ShoppingListState } from 'src/app/store/shopping-list.state';
 import { OldListComponent } from './old-list.component';
 
@@ -12,6 +13,7 @@ describe('OldListComponent', () => {
         TestBed.configureTestingModule({
             declarations: [OldListComponent],
             imports: [NgxsModule.forRoot([ShoppingListState])],
+            providers: [provideOneStoreManagerService()],
         }).compileComponents();
     }));
 

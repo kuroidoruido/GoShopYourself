@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { OneStoreManagerService } from './one-store-manager.service';
 
 @Component({
     selector: 'app-root',
@@ -7,5 +6,5 @@ import { OneStoreManagerService } from './one-store-manager.service';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    constructor(public oneStoreMgr: OneStoreManagerService) {}
+    constructor() {}
 }
