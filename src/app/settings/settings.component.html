@@ -1,0 +1,18 @@
+<h2>Settings</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="input-wrapper">
+        <mat-label>OneStore URL:</mat-label>
+        <input matInput placeholder="https://onestore.example.com" formControlName="onestoreUrl" autocomplete="url" />
+        <mat-error *ngIf="form.controls.onestoreUrl.errors?.pattern">It should be url.</mat-error>
+    </mat-form-field>
+    <mat-form-field class="input-wrapper">
+        <mat-label>OneStore username:</mat-label>
+        <input matInput placeholder="JohnDoe18" formControlName="onestoreUsername" autocomplete="username" />
+    </mat-form-field>
+    <mat-form-field class="input-wrapper">
+        <mat-label>OneStore shopping list owner:</mat-label>
+        <input matInput placeholder="JohnDoe18" formControlName="onestoreShoppingListOwner" autocomplete="username" />
+    </mat-form-field>
+    <button type="submit" mat-button>Save</button>
+</form>

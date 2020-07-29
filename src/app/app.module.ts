@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { HeaderModule } from './header/header.module';
 import { AppStoreModule } from './store/app-store.module';
+import { OneStoreModule } from './one-store/one-store.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -20,6 +21,7 @@ import { AppStoreModule } from './store/app-store.module';
         ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
 
         HeaderModule,
+        OneStoreModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

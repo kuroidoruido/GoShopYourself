@@ -1,0 +1,17 @@
+<h2>Login</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="input-wrapper">
+        <mat-label>OneStore URL:</mat-label>
+        <input matInput placeholder="JohnDoe18" formControlName="onestoreUrl" autocomplete="off" readonly />
+    </mat-form-field>
+    <mat-form-field class="input-wrapper">
+        <mat-label>OneStore username:</mat-label>
+        <input matInput placeholder="JohnDoe18" formControlName="username" autocomplete="off" readonly />
+    </mat-form-field>
+    <mat-form-field class="input-wrapper">
+        <mat-label>OneStore password:</mat-label>
+        <input matInput type="password" formControlName="password" autocomplete="off" />
+    </mat-form-field>
+    <button type="submit" mat-button>Login</button>
+</form>

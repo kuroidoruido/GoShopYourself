@@ -21,3 +21,7 @@ export class RemoveShoppingItem {
 export class ClearShoppingList {
     static readonly type = '[Shopping List] Clear';
 }
+
+export class RefreshShoppingList {
+    static readonly type = '[Shopping List] Refresh';
+}

@@ -11,4 +11,12 @@
     >
         <mat-icon>remove_shopping_cart</mat-icon>
     </button>
+    <button mat-icon-button aria-label="Settings" (click)="openSettings()" matTooltip="Settings">
+        <mat-icon>settings</mat-icon>
+    </button>
+    <ng-template [ngIf]="isUserConnected$ | async">
+        <button mat-icon-button aria-label="Logout" (click)="logout()" matTooltip="Logout">
+            <mat-icon>login</mat-icon>
+        </button>
+    </ng-template>
 </mat-toolbar>
